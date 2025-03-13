@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: "Gentium Plus", serif;
+	font-size: 20px;
+}
+
+body {
+	/* background-color: #c0f8ff; */
+}
+
+.text {
+	text-align: center;
+}
+
+.bg-img {
+	position: fixed;
+	z-index: -999;
+
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.wrapper {
+	
+}
+
+.container {
+	padding: 0 20px 0 20px;
+}
+
+.intro {
+	position: relative;
+	background-size: cover;
+	background-image: url('https://static.tildacdn.com/tild6533-3030-4536-b531-313964353136/Mask_group22.png');
+	height: 100vh;
+
+	margin-bottom: 50px;
+}
+
+.intro img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+	margin-bottom: 30px;
+
+	width: 100vw;
+}
+
+.invite {
+	margin-bottom: 100px;
+}
+
+.invite p img {
+	height: 8em;
+}
+
+.calendar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.calendar p {
+	font-size: 24px;
+}
+
+.calendar img {
+	width: 80vw;
+}
+
+.adress {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 100px;
+}
+
+.adress img {
+	width: 80vw;
+}
+
+.adress p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 100px;
+}
+
+.form img {
+	width: 80vw;
+}
+
+.ending {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 50px;
+}
+
+.ending img {
+	width: 80vw;
+}
