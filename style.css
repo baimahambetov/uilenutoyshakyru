@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'PF Champion Script Pro';
+  src: url('./assets/KZPFChampionScriptPro.ttf') format('ttf'),
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Чтобы текст отображался даже при задержке загрузки шрифта */
+}
+
 * {
 	margin: 0;
 	padding: 0;
