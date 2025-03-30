@@ -11,7 +11,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap"
 		rel="stylesheet">
 
-	<title>Document</title>
+	<script src="./script.js"></script>
+
+	<title>Тойға шақыру</title>
 </head>
 
 <body>
@@ -24,7 +26,9 @@
 			<img src="https://optim.tildacdn.pro/tild6636-3963-4536-b638-313132326630/-/resize/400x/-/format/webp/Mask_group.png.webp"
 				alt="">
 
-			<img class="ainurjigit" src="https://psv4.userapi.com/s/v1/d/hpL0F_0lztGWmsnp-X1GRm0eZHaCgythXZZqESpyHI5vS3eZDB2dlUEUTnSrAHtezAEnZ0xgVIjWRtkmSjvYhCXIq2Md7wcX7jSp2CiVPuYg1JBlbAm6cA/introtext.png" alt="">
+			<img class="ainurjigit"
+				src="https://psv4.userapi.com/s/v1/d/hpL0F_0lztGWmsnp-X1GRm0eZHaCgythXZZqESpyHI5vS3eZDB2dlUEUTnSrAHtezAEnZ0xgVIjWRtkmSjvYhCXIq2Md7wcX7jSp2CiVPuYg1JBlbAm6cA/introtext.png"
+				alt="">
 		</div>
 
 		<div class="invite">
@@ -44,7 +48,8 @@
 				ұлымыз бен келініміз
 				<br>
 				<br>
-				<img src="https://psv4.userapi.com/s/v1/d/xC24tnrHSOKi9prK2u1TMFEVqhfgy2650QaZpnF-WdCQrGb6zuSMsFoWXQzkL-O03OrIs4k0cvLrLDlLnWA1AG3KIPj50ognkOZvoez1bSrwugZJOLc67g/Nurjigit_amp_amp_Ainur.png" alt="">
+				<img src="https://psv4.userapi.com/s/v1/d/xC24tnrHSOKi9prK2u1TMFEVqhfgy2650QaZpnF-WdCQrGb6zuSMsFoWXQzkL-O03OrIs4k0cvLrLDlLnWA1AG3KIPj50ognkOZvoez1bSrwugZJOLc67g/Nurjigit_amp_amp_Ainur.png"
+					alt="">
 				<br>
 				<br>үйлену тойына арналған салтанатты ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
 				<img class="flower-img"
@@ -63,7 +68,8 @@
 		</div>
 
 		<div class="plan">
-			<img class="zagalovok" src="https://psv4.userapi.com/s/v1/d/Ih6K_hTnCZawqx9igghlVQ31BjCl01crliMUeqJPjK--4xkrQfG_zQ9LVEmArUk5rdudPxbpgfxVjH1yrVf2H1IcckJulQj-IEnmWvcLe34RqtzsuKgCXw/toybagdarlamasy.png"
+			<img class="zagalovok"
+				src="https://psv4.userapi.com/s/v1/d/Ih6K_hTnCZawqx9igghlVQ31BjCl01crliMUeqJPjK--4xkrQfG_zQ9LVEmArUk5rdudPxbpgfxVjH1yrVf2H1IcckJulQj-IEnmWvcLe34RqtzsuKgCXw/toybagdarlamasy.png"
 				alt="">
 
 			<div class="plan__item">
@@ -118,16 +124,74 @@
 			</p>
 		</div>
 
-		<div class="form">
-			<img src="https://psv4.userapi.com/s/v1/d/xeS1b5KOVoG7Xvz_BkjS2-UB91DevNgDaVV-FDQN3IEFURDxQSTnHs6ef6PFMMUMh48-qXj-UHn1jhQldt8oAqR4isHh6V9iZUeadMzczPNpnu6vr5kCQQ/toiieleri.png"
-				alt="">
-			<p style="font-size: 28px;margin-top: 20px;">Анамыз Сәуле</p>
+		<div class="countdown-container">
+			<h2>Тойға дейін:</h2>
+			<div id="countdown">
+				<div class="time-box">
+					<span id="days"></span>
+					<p>Күн</p>
+				</div>
+				<div class="time-box">
+					<span id="hours"></span>
+					<p>Сағат</p>
+				</div>
+				<div class="time-box">
+					<span id="minutes"></span>
+					<p>Минут</p>
+				</div>
+				<div class="time-box">
+					<span id="seconds"></span>
+					<p>Секунд</p>
+				</div>
+			</div>
 		</div>
 
-		<div class="ending">
-			<img src="https://psv4.userapi.com/s/v1/d/o23HmVm0ca7dCBMcD9SrygGGIZOFdPFtMwH3lADx4z3iJwDsbP1qFGWdXGsUiP2qZIGFZOgC8U6aK2jSMJz-vulhNZSCbQL-WsrtWp-7jOTx244g2XOtdA/end.png"
-				alt="">
+		<div class="form">
+			<form id="rsvp-form" action="https://formsubmit.co/baimahambetov.nurbol@gmail.com" method="post"
+				enctype="text/plain">
+				<!-- Обязательные скрытые поля для Formsubmit -->
+				<input type="hidden" name="_next" value="http://your-website.com/thank-you">
+				<!-- Страница, куда пользователь попадет после отправки -->
+				<input type="hidden" name="_captcha" value="false"> <!-- Отключаем CAPTCHA, если не нужно -->
+
+				<!-- Имя -->
+				<label for="name">Атыңызды жазыңыз:</label>
+				<input type="text" id="name" name="name" required placeholder="Атыңыз">
+
+				<!-- Вопрос об участии -->
+				<label for="attendance">Тойға келесіз бе?</label>
+				<div class="radio-buttons">
+					<label class="radio-option">
+						<input type="radio" name="attendance" value="ия әрине келемін" required> Ия, әрине келемін
+					</label>
+					<label class="radio-option">
+						<input type="radio" name="attendance" value="жұбайыммен келемін" required> Жұбайыммен келемін
+					</label>
+					<label class="radio-option">
+						<input type="radio" name="attendance" value="Өкінішке орай, келе алмаймын" required> Өкінішке
+						орай, келе алмаймын
+					</label>
+				</div>
+
+				<!-- Кнопка отправки -->
+				<button type="submit">Жіберу</button>
+			</form>
 		</div>
+
+
+	</div>
+
+
+	<div class="owner">
+		<img src="https://psv4.userapi.com/s/v1/d/xeS1b5KOVoG7Xvz_BkjS2-UB91DevNgDaVV-FDQN3IEFURDxQSTnHs6ef6PFMMUMh48-qXj-UHn1jhQldt8oAqR4isHh6V9iZUeadMzczPNpnu6vr5kCQQ/toiieleri.png"
+			alt="">
+		<p style="font-size: 28px;margin-top: 20px;">Анамыз Сәуле</p>
+	</div>
+
+	<div class="ending">
+		<img src="https://psv4.userapi.com/s/v1/d/o23HmVm0ca7dCBMcD9SrygGGIZOFdPFtMwH3lADx4z3iJwDsbP1qFGWdXGsUiP2qZIGFZOgC8U6aK2jSMJz-vulhNZSCbQL-WsrtWp-7jOTx244g2XOtdA/end.png"
+			alt="">
+	</div>
 
 	</div>
 </body>
