@@ -11,7 +11,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap"
 		rel="stylesheet">
 
-	<script src="./script.js"></script>
 
 	<title>Тойға шақыру</title>
 </head>
@@ -23,6 +22,17 @@
 			alt="">
 
 		<div class="intro">
+			<button class="audioplaybtn" onclick="toggleAudio()">
+				<span class="icon play active">▶</span>
+				<span class="icon pause">⏸</span>
+			</button>
+
+			<!-- Аудиофайл -->
+			<audio id="myAudio" loop>
+				<source src="./assets/bg-music.mp3" type="audio/mp3">
+				Ваш браузер не поддерживает тег audio.
+			</audio>
+
 			<img src="https://optim.tildacdn.pro/tild6636-3963-4536-b638-313132326630/-/resize/400x/-/format/webp/Mask_group.png.webp"
 				alt="">
 
@@ -146,37 +156,37 @@
 			</div>
 		</div>
 
+		<!-- 
 		<div class="form">
 			<form id="rsvp-form" action="https://formsubmit.co/baimahambetov.nurbol@gmail.com" method="post"
 				enctype="text/plain">
-				<!-- Обязательные скрытые поля для Formsubmit -->
-				<input type="hidden" name="_next" value="https://baimahambetov.github.io/uilenutoyshakyru/">
-				<!-- Страница, куда пользователь попадет после отправки -->
-				<input type="hidden" name="_captcha" value="false"> <!-- Отключаем CAPTCHA, если не нужно -->
+		<input type="hidden" name="_next" value="http://your-website.com/thank-you">
+		<input type="hidden" name="_captcha" value="false">
 
-				<!-- Имя -->
-				<label for="name">Атыңызды жазыңыз:</label>
-				<input type="text" id="name" name="name" required placeholder="Атыңыз">
+		
+		<label for="name">Атыңызды жазыңыз:</label>
+		<input type="text" id="name" name="name" required placeholder="Атыңыз">
 
-				<!-- Вопрос об участии -->
-				<label for="attendance">Тойға келесіз бе?</label>
-				<div class="radio-buttons">
-					<label class="radio-option">
-						<input type="radio" name="attendance" value="ия әрине келемін" required> Ия, әрине келемін
-					</label>
-					<label class="radio-option">
-						<input type="radio" name="attendance" value="жұбайыммен келемін" required> Жұбайыммен келемін
-					</label>
-					<label class="radio-option">
-						<input type="radio" name="attendance" value="Өкінішке орай, келе алмаймын" required> Өкінішке
-						орай, келе алмаймын
-					</label>
-				</div>
-
-				<!-- Кнопка отправки -->
-				<button type="submit">Жіберу</button>
-			</form>
+	
+		<label for="attendance">Тойға келесіз бе?</label>
+		<div class="radio-buttons">
+			<label class="radio-option">
+				<input type="radio" name="attendance" value="ия әрине келемін" required> Ия, әрине келемін
+			</label>
+			<label class="radio-option">
+				<input type="radio" name="attendance" value="жұбайыммен келемін" required> Жұбайыммен келемін
+			</label>
+			<label class="radio-option">
+				<input type="radio" name="attendance" value="Өкінішке орай, келе алмаймын" required> Өкінішке
+				орай, келе алмаймын
+			</label>
 		</div>
+
+	
+		<button type="submit">Жіберу</button>
+		</form>
+	</div>
+	-->
 
 
 	</div>
@@ -194,6 +204,9 @@
 	</div>
 
 	</div>
+
+	<script src="./script.js"></script>
+
 </body>
 
 </html>
