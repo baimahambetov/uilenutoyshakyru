@@ -57,6 +57,34 @@ body {
 	height: 100vh;
 	margin-bottom: 50px;
 	width: 100%;
+
+	
+}
+
+.audioplaybtn {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 20vmin; /* Используем vmin для адаптации к меньшей стороне экрана */
+	height: 20vmin; /* Делаем высоту равной ширине */
+	border-radius: 50%;
+	background-color: transparent;
+	border: dotted 2px #000;
+	font-size: 30vmin; /* Адаптируем размер иконки */
+	z-index: 9999;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center; /* Центрируем иконку внутри круга */
+}
+
+.icon {
+	display: none;
+}
+
+.active {
+	display: block;
 }
 
 .intro img {
@@ -67,11 +95,11 @@ body {
 
 .intro .ainurjigit {
 	position: absolute;
-	bottom: 0;
+	top: calc(20% + 10vmin);
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 999;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 	width: 90%;
 	max-width: 1000px;
 	height: auto;
