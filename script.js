@@ -1,5 +1,5 @@
-// Устанавливаем дату для отсчета (4 августа 2025 года)
-const targetDate = new Date('August 4, 2025 00:00:00').getTime();
+// Устанавливаем дату для отсчета (4 Июнь 2025 года)
+const targetDate = new Date('June 4, 2025 00:00:00').getTime();
 
 // Функция для обновления времени отсчета
 function updateCountdown() {
@@ -32,3 +32,19 @@ const interval = setInterval(updateCountdown, 1000);
 
 // Инициализируем отсчет
 updateCountdown();
+
+const audio = document.getElementById('myAudio');
+const playBtn = document.querySelector('.play');
+const pauseBtn = document.querySelector('.pause');
+
+function toggleAudio() {
+	if (audio.paused) {
+		audio.play();
+		playBtn.classList.remove('active');
+		pauseBtn.classList.add('active');
+	} else {
+		audio.pause();
+		pauseBtn.classList.remove('active');
+		playBtn.classList.add('active');
+	}
+}
