@@ -1,0 +1,432 @@
+@font-face {
+	font-family: 'PF Champion Script Pro';
+	src: url('./assets/KZPFChampionScriptPro.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap; /* Чтобы текст отображался даже при задержке загрузки шрифта */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Cormorant Infant', serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #000;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.container {
+	padding: 0 20px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.text {
+	text-align: center;
+}
+
+.bg-img {
+	position: fixed;
+	z-index: -999;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.flower-img {
+	width: auto;
+	height: 120px;
+	margin: 50px 0;
+	display: block;
+	max-width: 100%;
+}
+
+.intro {
+	position: relative;
+	height: 100vh;
+	margin-bottom: 50px;
+	width: 100%;
+
+	
+}
+
+.audioplaybtn {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 20vmin; /* Используем vmin для адаптации к меньшей стороне экрана */
+	height: 20vmin; /* Делаем высоту равной ширине */
+	border-radius: 50%;
+	background-color: transparent;
+	border: dotted 2px #000;
+	font-size: 30vmin; /* Адаптируем размер иконки */
+	z-index: 9999;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center; /* Центрируем иконку внутри круга */
+}
+
+.icon {
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+.intro img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.intro .ainurjigit {
+	position: absolute;
+	top: calc(20% + 10vmin);
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 999;
+	/* margin-bottom: 30px; */
+	width: 90%;
+	max-width: 1000px;
+	height: auto;
+}
+
+.invite {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.invite p {
+	width: 100%;
+	padding: 0 20px;
+}
+
+.invite p img {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.calendar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.calendar p {
+	font-size: 24px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.calendar img {
+	width: 90%;
+	max-width: 600px;
+}
+
+.plan {
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 100px;
+	width: 100%;
+}
+
+.plan .zagalovok {
+	width: 90%;
+	max-width: 600px;
+}
+
+.plan__item {
+	width: 100%;
+	max-width: 500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.plan__item img {
+	width: 100px;
+	height: 100px;
+	min-width: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	flex-shrink: 0;
+}
+
+.plan__item:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.plan__text {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.adress {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	width: 100%;
+}
+
+.adress img {
+	width: 90%;
+	max-width: 600px;
+}
+
+.adress p {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+.owner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	width: 100%;
+}
+
+.owner img {
+	width: 90%;
+	max-width: 600px;
+}
+
+.owner p {
+	font-size: 28px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* Основной стиль для формы */
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	width: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+.form label {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+/* Инпуты и кнопки */
+.form input[type='text'] {
+	padding: 12px 20px;
+	font-size: 18px;
+	width: 100%;
+	max-width: 500px; /* Ограничим максимальную ширину */
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+/* Радиокнопки */
+.form .radio-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.form .radio-option {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+
+.form .radio-option input[type='radio'] {
+	margin-right: 10px;
+}
+
+.form button {
+	padding: 15px 30px;
+	background-color: #4caf50;
+	color: white;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 100%;
+	max-width: 500px; /* Ограничим максимальную ширину кнопки */
+}
+
+.form button:hover {
+	background-color: #45a049;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+	.form input[type='text'] {
+		font-size: 16px;
+		padding: 10px;
+	}
+
+	.form button {
+		font-size: 16px;
+		padding: 12px 25px;
+	}
+}
+
+.ending {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.ending img {
+	width: 90%;
+	max-width: 600px;
+}
+
+@media (max-width: 768px) {
+	.plan__item {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.plan__item:nth-child(even) {
+		flex-direction: column;
+	}
+
+	.flower-img {
+		height: 80px;
+		margin: 30px 0;
+	}
+
+	.intro .ainurjigit {
+		width: 95%;
+		margin-bottom: 20px;
+	}
+
+	.plan__text br {
+		display: none;
+	}
+}
+
+.countdown-container {
+	text-align: center;
+	font-family: 'Cormorant Infant', serif;
+	margin-top: 50px;
+
+	margin-bottom: 50px;
+}
+
+#countdown {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	font-size: 24px;
+}
+
+.time-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.time-box span {
+	font-size: 40px;
+	font-weight: bold;
+	color: #000;
+}
+
+.time-box p {
+	font-size: 18px;
+	color: #333;
+}
+
+#video-background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	/* min-width: 100%; */
+	/* min-height: 100%; */
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	z-index: -2; /* Отправляем видео на задний план */
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.7) 0%,    
+        rgba(255, 255, 255, 0.6) 50%,  
+        rgba(255, 255, 255, 0.7) 100%  
+    );
+}
+
+.content {
+	position: absolute;
+	top: calc(20% + 30vmin);
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1; /* Контент поверх видео */
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	/* margin-bottom: 50px; */
+}
+
+.gallery img {
+	height: 100%;
+	width: 100%;
+}

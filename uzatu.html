@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./uzatu.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap"
+		rel="stylesheet">
+
+
+	<title>Тойға шақыру</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="intro">
+			<button class="audioplaybtn" onclick="toggleAudio()">
+				<span class="icon play active">▶</span>
+				<span class="icon pause">⏸</span>
+			</button>
+
+			<!-- Аудиофайл -->
+			<audio id="myAudio" loop>
+				<source src="./assets/bg-music.mp3" type="audio/mp3">
+				Ваш браузер не поддерживает тег audio.
+			</audio>
+
+			<!-- <img src="https://optim.tildacdn.pro/tild6636-3963-4536-b638-313132326630/-/resize/400x/-/format/webp/Mask_group.png.webp"
+				alt=""> -->
+
+			<video id="video-background" autoplay loop muted playsinline>
+				<source src="../assets/background-video.MP4" type="video/mp4">
+				Ваш браузер не поддерживает видео.
+			</video>
+
+			<div class="overlay"></div>
+
+			<div class="content">
+				<img
+					src="https://psv4.userapi.com/s/v1/d/reih-GXmCfWXwBDBnXPP33tSOQJxVoVCsFT2lqhGYghTEQfSBw8pxNmaqZ1gUPySpr3x2rJPoThAx6vfAD28moOuoNUIh3ZcdCGYV4Xlo9qKbv3E0mAfvQ/ainur.png"
+					alt="">
+			</div>
+
+
+
+		</div>
+
+
+
+		<div class="invite">
+
+			<p class="text container">
+				<img src="https://static.tildacdn.com/tild6630-3738-4931-a138-363062333037/razdelitelnaya-linya.png"
+					alt="">
+				Әлпештеп басқан бауырға, <br>
+				Кем көрмей ұлдан шалқытып. <br>
+				Ата – ана қалып ауылда, <br>
+				Асықтың тұр деп жар күтіп. <br>
+
+
+
+				Анаңның жолын жалғадың, <br>
+				Жат жұртқа кетіп барасың. <br>
+				Сүюдің татып бал дәмін, <br>
+				Жарыңмен тапқын жарасым! <br>
+			</p>
+			<img class="flower-img"
+				src="https://psv4.userapi.com/s/v1/d/ofOUEa8ODBFpSKvsVtKEZsUrHdcyT0626GQ-fh1YcU7hxQ8dVHp6p3kdKxZke3btTm3yan3XL8oNcyYcAg1V-DD-HbmC0LmFeAfY9y5mBcU1I3UU2W9yPA/flower.png"
+				alt="">
+			<p class="text container">
+				Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жарандар, ұжымдастар, көршілер!
+				<br><br>
+				Сіздерді қызымыздың ұзату тойына арналған салтанатты ақ дастарханымыздың қадірлі қонағы болуға
+				шақырамыз!
+				<br>
+				<img class="flower-img"
+					src="https://psv4.userapi.com/s/v1/d/ofOUEa8ODBFpSKvsVtKEZsUrHdcyT0626GQ-fh1YcU7hxQ8dVHp6p3kdKxZke3btTm3yan3XL8oNcyYcAg1V-DD-HbmC0LmFeAfY9y5mBcU1I3UU2W9yPA/flower.png"
+					alt="">
+			<div class="gallery">
+				<img src="../assets/photo.JPG" alt="">
+			</div>
+			</p>
+
+		</div>
+
+		<div class="owner">
+			<img src="https://psv4.userapi.com/s/v1/d/xeS1b5KOVoG7Xvz_BkjS2-UB91DevNgDaVV-FDQN3IEFURDxQSTnHs6ef6PFMMUMh48-qXj-UHn1jhQldt8oAqR4isHh6V9iZUeadMzczPNpnu6vr5kCQQ/toiieleri.png"
+				alt="">
+			<p style="font-size: 28px;margin-top: 20px;">Ербол-Жанар</p>
+		</div>
+
+		<div class="calendar">
+			<img src="https://psv4.userapi.com/s/v1/d/eGHuS5JzS7NEwHu1-zRyjxssPsG9dPymzafar6FoETWtQS5cG7pp0Gk6iHbTEu5owq9JnBWHC0hOtoW7M0yL09P9JxpE-t5I19VKDFAqQ06e06Ha1lUDFw/toisaltanaty.png"
+				alt="">
+			<p>3 маусым, 2025 жыл</p>
+			<img src="https://psv4.userapi.com/s/v1/d/WOG4KGc65PI6aW9956kJS2gpBNo--GPvse26BnOhzxEs0ztqi0rmL65k6xlgZ6-05lHB5z_n-WFx21isdCsHdV2HsLewJuoCHn1ekgzVt0IZVeEELFLwRg/uzatu-calendar.png"
+				alt="">
+		</div>
+
+		<div class="adress">
+			<img src="https://psv4.userapi.com/s/v1/d/EFfpgUQJE1tAbWez7GuCSb83ftjGzuRcf_8Q5Ztds3Y9PKkjbYWO3YN21I-ypSYYUEglZrUr_TbhVXm2k7Ea2nwm4E4T2jSQlkwtSt4qJIxc2syPf5FXwA/adress.png"
+				alt="">
+
+			<p>
+				Тараз қаласы<br>
+				Проспект Жамбыла 18Б/1<br>
+				“Екі жұлдыз” мейрамханасы<br>
+				(үлкен зал)
+			</p>
+		</div>
+
+		<div class="countdown-container">
+			<h2>Тойға дейін:</h2>
+			<div id="countdown">
+				<div class="time-box">
+					<span id="days"></span>
+					<p>Күн</p>
+				</div>
+				<div class="time-box">
+					<span id="hours"></span>
+					<p>Сағат</p>
+				</div>
+				<div class="time-box">
+					<span id="minutes"></span>
+					<p>Минут</p>
+				</div>
+				<div class="time-box">
+					<span id="seconds"></span>
+					<p>Секунд</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 
+		<div class="form">
+			<form id="rsvp-form" action="https://formsubmit.co/baimahambetov.nurbol@gmail.com" method="post"
+				enctype="text/plain">
+		<input type="hidden" name="_next" value="http://your-website.com/thank-you">
+		<input type="hidden" name="_captcha" value="false">
+
+		
+		<label for="name">Атыңызды жазыңыз:</label>
+		<input type="text" id="name" name="name" required placeholder="Атыңыз">
+
+	
+		<label for="attendance">Тойға келесіз бе?</label>
+		<div class="radio-buttons">
+			<label class="radio-option">
+				<input type="radio" name="attendance" value="ия әрине келемін" required> Ия, әрине келемін
+			</label>
+			<label class="radio-option">
+				<input type="radio" name="attendance" value="жұбайыммен келемін" required> Жұбайыммен келемін
+			</label>
+			<label class="radio-option">
+				<input type="radio" name="attendance" value="Өкінішке орай, келе алмаймын" required> Өкінішке
+				орай, келе алмаймын
+			</label>
+		</div>
+
+	
+		<button type="submit">Жіберу</button>
+		</form>
+	</div>
+	-->
+
+
+	</div>
+
+
+
+
+	<div class="ending">
+		<img src="https://psv4.userapi.com/s/v1/d/o23HmVm0ca7dCBMcD9SrygGGIZOFdPFtMwH3lADx4z3iJwDsbP1qFGWdXGsUiP2qZIGFZOgC8U6aK2jSMJz-vulhNZSCbQL-WsrtWp-7jOTx244g2XOtdA/end.png"
+			alt="">
+	</div>
+
+	</div>
+
+	<script src="./uzatu.js"></script>
+
+</body>
+
+</html>
