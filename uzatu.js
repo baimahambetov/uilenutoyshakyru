@@ -1,5 +1,5 @@
-// Устанавливаем дату для отсчета (4 Июнь 2025 года)
-const targetDate = new Date('June 3, 2025 00:00:00').getTime();
+// Устанавливаем дату для отсчета (2 Июнь 2025 года)
+const targetDate = new Date('June 2, 2025 00:00:00').getTime();
 
 // Функция для обновления времени отсчета
 function updateCountdown() {
